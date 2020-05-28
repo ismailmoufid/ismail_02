@@ -1,9 +1,10 @@
-//generate random color fo the body on load or click
 const setBg = () => {
   const randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.body.style.backgroundColor = "#" + randomColor + "77";
   color.innerHTML = "#" + randomColor + "77";
-}genNew.addEventListener("click", setBg);
+}
+//generate random color fo the body on load or click
+genNew.addEventListener("click", setBg);
 //activate burger
 const navSlide = () => {
 	const burger = document.querySelector('.burger');
@@ -24,6 +25,5 @@ const navSlide = () => {
     burger.classList.toggle('toggle');
 	});
 }
-//call the functions
 navSlide();
 setBg();
